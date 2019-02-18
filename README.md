@@ -31,7 +31,7 @@ RABBITMQ_ROUTING_KEY = "item"
 RABBITMQ_QUEUE = "item"
 
 ITEM_PIPELINES = {
-    "scrapy_rabbitmq.pipelines.RabbitMQItemPublisherPipeline": 1,
+    "scrapy_rabbitmq_publisher.pipelines.RabbitMQItemPublisherPipeline": 1,
 }
 ```
 
