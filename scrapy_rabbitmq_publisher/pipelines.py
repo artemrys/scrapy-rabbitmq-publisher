@@ -23,8 +23,7 @@ class RabbitMQItemPublisherPipeline(object):
         self.queue = queue
         self.channel.queue_declare(queue=queue,
                                    durable=True)
-        self.channel.queue_bind(callback=None,
-                                exchange=exchange,
+        self.channel.queue_bind(exchange=exchange,
                                 routing_key=routing_key,
                                 queue=queue)
         self.encoder = ScrapyJSONEncoder()
