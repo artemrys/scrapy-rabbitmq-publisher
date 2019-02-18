@@ -21,6 +21,9 @@ class RabbitMQItemPublisherPipeline(object):
         self.exchange = exchange
         self.routing_key = routing_key
         self.queue = queue
+        self.channel.exchange_declare(exchange=exchange,
+                                      exchange_type="direct",
+                                      durable=True)
         self.channel.queue_declare(queue=queue,
                                    durable=True)
         self.channel.queue_bind(exchange=exchange,

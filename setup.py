@@ -38,7 +38,7 @@ setup(
     name="scrapy-rabbitmq-publisher",
     author="Artem Rys",
     description="Scrapy Item Pipeline to send items to RabbitMQ",
-    version="0.1.2",
+    version="0.1.4",
     author_email="rysartem@gmail.com",
     license="MIT",
     url="https://github.com/artemrys/scrapy-rabbitmq-publisher",
